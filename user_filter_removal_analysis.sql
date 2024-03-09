@@ -26,21 +26,9 @@ SEARCH_FILTER_EVENTS AS
           'Accident Count Max', FILTER_ACCIDENT_COUNT_MAX::STRING
         ), NULL),
         'Airbags And Restraints', FILTER_AIRBAGS_AND_RESTRAINTS,
-        'AutoGrade', IFF(FILTER_AUTOGRADE_MIN IS NOT NULL OR FILTER_AUTOGRADE_MAX IS NOT NULL, OBJECT_CONSTRUCT(
-            'AutoGrade Min', FILTER_AUTOGRADE_MIN::STRING,
-            'AutoGrade Max', FILTER_AUTOGRADE_MAX::STRING
-        ), NULL),
         'Biohazard', FILTER_BIOHAZARD,
         'Body Type', FILTER_BODY_TYPE,
         'Brakes', FILTER_BRAKES,
-        'CR Grade', IFF(FILTER_CR_GRADE_MIN IS NOT NULL OR FILTER_CR_GRADE_MAX IS NOT NULL, OBJECT_CONSTRUCT(
-            'CR Grade Min', FILTER_CR_GRADE_MIN::STRING,
-            'CR Grade Max', FILTER_CR_GRADE_MAX::STRING
-        ), NULL),
-        'Current Opening Bid', IFF(FILTER_CURRENT_OPENING_BID_MIN IS NOT NULL OR FILTER_CURRENT_OPENING_BID_MAX IS NOT NULL, OBJECT_CONSTRUCT(
-            'Current Opening Bid Min', FILTER_CURRENT_OPENING_BID_MIN::STRING,
-            'Current Opening Bid Max', FILTER_CURRENT_OPENING_BID_MAX::STRING
-        ), NULL),
         'Door Count', IFF(FILTER_DOOR_COUNT_MIN IS NOT NULL OR FILTER_DOOR_COUNT_MAX IS NOT NULL, OBJECT_CONSTRUCT(
             'Door Count Min', FILTER_DOOR_COUNT_MIN::STRING,
             'Door Count Max', FILTER_DOOR_COUNT_MAX::STRING
@@ -82,14 +70,6 @@ SEARCH_FILTER_EVENTS AS
         ), NULL),
         'Odometer Discrepancy', FILTER_ODOMETER_DISCREPANCY,
         'Odometer Issue', FILTER_ODOMETER_ISSUE,
-        'Open Bid', IFF(FILTER_OPEN_BID_MIN IS NOT NULL OR FILTER_OPEN_BID_MAX IS NOT NULL, OBJECT_CONSTRUCT(
-            'Open Bid Min', FILTER_OPEN_BID_MIN::STRING,
-            'Open Bid Max', FILTER_OPEN_BID_MAX::STRING
-        ), NULL),
-        'Owner Count', IFF(FILTER_OWNER_COUNT_MIN IS NOT NULL OR FILTER_OWNER_COUNT_MAX IS NOT NULL, OBJECT_CONSTRUCT(
-            'Owner Count Min', FILTER_OWNER_COUNT_MIN::STRING,
-            'Owner Count Max', FILTER_OWNER_COUNT_MAX::STRING
-        ), NULL),
         'Pickup Location', FILTER_PICKUP_LOCATION,
         'Prior Paint', FILTER_PRIOR_PAINT,
         'Region', FILTER_REGION,
@@ -102,10 +82,6 @@ SEARCH_FILTER_EVENTS AS
         'Steering', FILTER_STEERING,
         'Structural Damage', FILTER_STRUCTURAL_DAMAGE,
         'Suspension', FILTER_SUSPENSION,
-        'Title Issue Count', IFF(FILTER_TITLE_ISSUE_COUNT_MIN IS NOT NULL OR FILTER_TITLE_ISSUE_COUNT_MAX IS NOT NULL, OBJECT_CONSTRUCT(
-            'Title Issue Count Min', FILTER_TITLE_ISSUE_COUNT_MIN::STRING,
-            'Title Issue Count Max', FILTER_TITLE_ISSUE_COUNT_MAX::STRING
-        ), NULL),
         'Transmission', FILTER_TRANSMISSION,
         'Trim', FILTER_TRIM,
         'Warning Lights', FILTER_WARNING_LIGHTS,
@@ -133,21 +109,9 @@ SEARCH_FILTER_EVENTS AS
           'Accident Count Max', FILTER_ACCIDENT_COUNT_MAX::STRING
         ), NULL),
         'Airbags And Restraints', FILTER_AIRBAGS_AND_RESTRAINTS,
-        'AutoGrade', IFF(FILTER_AUTOGRADE_MIN IS NOT NULL OR FILTER_AUTOGRADE_MAX IS NOT NULL, OBJECT_CONSTRUCT(
-            'AutoGrade Min', FILTER_AUTOGRADE_MIN::STRING,
-            'AutoGrade Max', FILTER_AUTOGRADE_MAX::STRING
-        ), NULL),
         'Biohazard', FILTER_BIOHAZARD,
         'Body Type', FILTER_BODY_TYPE,
         'Brakes', FILTER_BRAKES,
-        'CR Grade', IFF(FILTER_CR_GRADE_MIN IS NOT NULL OR FILTER_CR_GRADE_MAX IS NOT NULL, OBJECT_CONSTRUCT(
-            'CR Grade Min', FILTER_CR_GRADE_MIN::STRING,
-            'CR Grade Max', FILTER_CR_GRADE_MAX::STRING
-        ), NULL),
-        'Current Opening Bid', IFF(FILTER_CURRENT_OPENING_BID_MIN IS NOT NULL OR FILTER_CURRENT_OPENING_BID_MAX IS NOT NULL, OBJECT_CONSTRUCT(
-            'Current Opening Bid Min', FILTER_CURRENT_OPENING_BID_MIN::STRING,
-            'Current Opening Bid Max', FILTER_CURRENT_OPENING_BID_MAX::STRING
-        ), NULL),
         'Door Count', IFF(FILTER_DOOR_COUNT_MIN IS NOT NULL OR FILTER_DOOR_COUNT_MAX IS NOT NULL, OBJECT_CONSTRUCT(
             'Door Count Min', FILTER_DOOR_COUNT_MIN::STRING,
             'Door Count Max', FILTER_DOOR_COUNT_MAX::STRING
@@ -189,14 +153,6 @@ SEARCH_FILTER_EVENTS AS
         ), NULL),
         'Odometer Discrepancy', FILTER_ODOMETER_DISCREPANCY,
         'Odometer Issue', FILTER_ODOMETER_ISSUE,
-        'Open Bid', IFF(FILTER_OPEN_BID_MIN IS NOT NULL OR FILTER_OPEN_BID_MAX IS NOT NULL, OBJECT_CONSTRUCT(
-            'Open Bid Min', FILTER_OPEN_BID_MIN::STRING,
-            'Open Bid Max', FILTER_OPEN_BID_MAX::STRING
-        ), NULL),
-        'Owner Count', IFF(FILTER_OWNER_COUNT_MIN IS NOT NULL OR FILTER_OWNER_COUNT_MAX IS NOT NULL, OBJECT_CONSTRUCT(
-            'Owner Count Min', FILTER_OWNER_COUNT_MIN::STRING,
-            'Owner Count Max', FILTER_OWNER_COUNT_MAX::STRING
-        ), NULL),
         'Pickup Location', FILTER_PICKUP_LOCATION,
         'Prior Paint', FILTER_PRIOR_PAINT,
         'Region', FILTER_REGION,
@@ -209,10 +165,6 @@ SEARCH_FILTER_EVENTS AS
         'Steering', FILTER_STEERING,
         'Structural Damage', FILTER_STRUCTURAL_DAMAGE,
         'Suspension', FILTER_SUSPENSION,
-        'Title Issue Count', IFF(FILTER_TITLE_ISSUE_COUNT_MIN IS NOT NULL OR FILTER_TITLE_ISSUE_COUNT_MAX IS NOT NULL, OBJECT_CONSTRUCT(
-            'Title Issue Count Min', FILTER_TITLE_ISSUE_COUNT_MIN::STRING,
-            'Title Issue Count Max', FILTER_TITLE_ISSUE_COUNT_MAX::STRING
-        ), NULL),
         'Transmission', FILTER_TRANSMISSION,
         'Trim', FILTER_TRIM,
         'Warning Lights', FILTER_WARNING_LIGHTS,
