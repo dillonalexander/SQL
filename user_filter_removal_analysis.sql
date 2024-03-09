@@ -241,8 +241,9 @@ SEARCH_FILTER_REMOVED_DETAIL AS
         THEN USER_ID || '-' || SUM(CASE WHEN EVENT_TYPE = 'Search Filter Applied' THEN 1 ELSE 0 END) OVER (PARTITION BY USER_ID ORDER BY TIMESTAMP)::STRING
         ELSE NULL
         END
-    AS SEARCH_FILTER_REMOVED_ID
-
+    AS SEARCH_FILTER_REMOVED_ID 
+    /*This will increment the ID by 1 everytime a Search Filter Applied event shows up in a User's filter usage history. 
+    Basically, this will allow for sequences of filter removed events to be linked together with the same increment and separated when a user applies a filter and changing the incremented ID. */
     FROM SEARCH_FILTER_REMOVED_EVENTS
     )
 
