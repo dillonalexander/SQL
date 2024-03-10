@@ -7,7 +7,7 @@ as the events that track filter removal can only tell us if a single filter or c
 was used -> If a user has 5 filters active and hits the remove-all button, that gets
 recorded on a single line, but if the user removed each filter individually, that would be 5
 records. This skews the analysis to present single filter removal as much more common if not 
-considered in some way. Use below logic to assign a filter_removal_id that associates back to back single filter removals
+accounted for in some way. Use below logic to assign a filter_removal_id that associates back to back single filter removals
 into a single id, then a count distinct on that field will give us an accurate basis for comparison.
 */
 
